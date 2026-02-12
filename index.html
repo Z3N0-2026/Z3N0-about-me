@@ -11,19 +11,24 @@
             background-color: #0c0c0c;
             color: #ffffff;
             text-align: center;
+            padding: 20px;
         }
         h1 {
             color: #39ff14;
             text-shadow: 0 0 20px #39ff14;
+            display: inline-block;
+            margin: 40px auto;
         }
         .typing {
-            display: inline;
+            display: inline-block;
             font-weight: bold;
-            color: #ffffff;
+            color: #39ff14;
             white-space: nowrap;
             overflow: hidden;
             border-right: 0.15em solid #39ff14;
-            animation: typing 3s steps(10, end), blink-caret 0.75s step-end infinite;
+            animation: typing 4s steps(40, end) 1s 1 normal both,
+                       blink-caret 0.75s step-end infinite;
+            max-width: 100%;
         }
         @keyframes typing {
             from { width: 0; }
@@ -34,11 +39,27 @@
             50% { border-color: #39ff14; }
         }
         .projects {
-            margin: 20px;
+            margin: 20px auto;
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px #39ff14;
+            max-width: 600px;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .projects a {
+            color: #9d4edd;
+            text-decoration: none;
+        }
+        .projects a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
