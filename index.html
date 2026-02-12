@@ -4,55 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .hero { background: url('path/to/background.jpg') no-repeat center center; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
-        .section { padding: 50px; }
-        .skills { display: flex; justify-content: space-around; }
-        .contact-form { display: flex; flex-direction: column; }
-        .contact-form input, .contact-form textarea { margin: 5px 0; padding: 10px; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+            color: #ffffff;
+            text-align: center;
+        }
+        h1 {
+            color: #39ff14;
+            text-shadow: 0 0 20px #39ff14;
+        }
+        .typing {
+            display: inline;
+            font-weight: bold;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid #39ff14;
+            animation: typing 3s steps(10, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #39ff14; }
+        }
+        .projects {
+            margin: 20px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #39ff14;
+        }
     </style>
 </head>
 <body>
-
-    <section class="hero">
-        <h1>Welcome to My Professional Portfolio</h1>
-        <p>Discover my work and skills.</p>
-    </section>
-
-    <section class="about section">
-        <h2>About Me</h2>
-        <p>Hi, I'm a passionate professional with expertise in various fields. I enjoy creating impactful projects.</p>
-    </section>
-
-    <section class="skills section">
-        <h2>My Skills</h2>
-        <div>
-            <div>
-                <i class="fas fa-code"></i>
-                <p>Coding</p>
-            </div>
-            <div>
-                <i class="fas fa-paint-brush"></i>
-                <p>Design</p>
-            </div>
-            <div>
-                <i class="fas fa-project-diagram"></i>
-                <p>Project Management</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact section">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send <i class="fas fa-paper-plane"></i></button>
-        </form>
-    </section>
-
+    <h1 class="typing">Welcome to My Professional Portfolio</h1>
+    <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: <a href="#">Link to project 1</a></li>
+            <li>Project 2: <a href="#">Link to project 2</a></li>
+            <li>Project 3: <a href="#">Link to project 3</a></li>
+        </ul>
+    </div>
 </body>
 </html>
