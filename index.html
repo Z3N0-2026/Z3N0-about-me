@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z3N0 - About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero { background: url('path/to/background.jpg') no-repeat center center; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .section { padding: 50px; }
+        .skills { display: flex; justify-content: space-around; }
+        .contact-form { display: flex; flex-direction: column; }
+        .contact-form input, .contact-form textarea { margin: 5px 0; padding: 10px; }
+    </style>
 </head>
 <body>
-    <div class="background-fog"></div>
-    
-    <div class="container">
-        <!-- Profile Picture -->
-        <div class="profile-section">
-            <img src="https://share.google/dlStFBYjRtZT2VqW6" alt="Z3N0 Profile" class="profile-pic">
-        </div>
 
-        <!-- Typing Animated Title -->
-        <div class="typing-container">
-            <h1 class="typing-text">Z3N0 • Discord Manager • JavaScript Coder • Bot development • Moderation</h1>
-        </div>
+    <section class="hero">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>Discover my work and skills.</p>
+    </section>
 
-        <!-- Discord Link -->
-        <div class="discord-section">
-            <a href="https://discord.gg/ykXNXBhcj" class="discord-link">
-                <svg class="discord-icon" viewBox="0 0 245 240" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M104.14 135.928c-5.09 0-9.083 4.523-9.083 10.085 0 5.527 4.097 10.083 9.083 10.083 5.09 0 9.083-4.523 9.083-10.083.11-5.562-4.097-10.085-9.083-10.085zM140.86 135.928c-5.09 0-9.083 4.523-9.083 10.085 0 5.527 4.097 10.083 9.083 10.083 5.09 0 9.083-4.523 9.083-10.083 0-5.562-3.993-10.085-9.083-10.085z"/>
-                    <path d="M189.42 0H20.495C9.043 0 0 9.043 0 20.495v167.39c0 11.452 9.043 20.495 20.495 20.495h149.9l-7.015-24.368 1.692 1.569 15.983 14.317h16.375c11.452 0 20.495-9.043 20.495-20.495V20.495C209.915 9.043 200.872 0 189.42 0zm-36.84 130.926s-3.448-4.097-6.325-7.722c12.548-3.543 17.348-11.41 17.348-11.41-3.927 2.576-7.654 4.388-11.01 5.626-4.793 2.026-9.39 3.372-13.899 4.147-9.166 1.692-17.593.758-24.755-1.058-5.373-1.266-9.976-3.099-13.899-5.626-.869-.476-1.714-.999-2.577-1.551-.103-.069-.207-.138-.31-.207-.069-.035-.103-.069-.138-.103-3.06-1.86-5.05-3.201-5.05-3.201s4.655 7.654 16.858 11.269c-2.912 3.69-6.496 7.931-6.496 7.931-21.441-.69-29.6-14.765-29.6-14.765 0-31.223 13.934-56.482 13.934-56.482 13.934-10.467 27.163-10.18 27.163-10.18l.966 1.17c-17.384 5.013-25.375 12.616-25.375 12.616s2.126-1.134 5.698-2.75c10.334-4.562 18.54-5.839 21.923-6.152 1.038-.137 1.966-.207 3.061-.207 9.735 0 20.632 2.162 32.089 6.677 0 0-7.515-7.205-23.973-12.201l1.348-1.552s13.229-.288 27.163 10.18c0 0 13.934 25.259 13.934 56.482 0 0-8.244 14.074-29.651 14.765z"/>
-                </svg>
-                Join My Discord
-            </a>
-        </div>
+    <section class="about section">
+        <h2>About Me</h2>
+        <p>Hi, I'm a passionate professional with expertise in various fields. I enjoy creating impactful projects.</p>
+    </section>
 
-        <!-- About Me Section -->
-        <div class="about-section">
-            <h2>About Me</h2>
-            <p>Hello, I'm Z3N0 a discord manager and moderator. I shine in JavaScript code, management and development tools. I manage vr communities usually. I've managed some of the biggest modern day vr communities, managing and moderating both of the biggest lethal ape games both with over 5 thousand meta reviews one with 37k reviews and over 500k downloads. I've beta tested the largest vr gorilla tag fan game horror, scary baboon. Anyways thanks for checking out my page.</p>
+    <section class="skills section">
+        <h2>My Skills</h2>
+        <div>
+            <div>
+                <i class="fas fa-code"></i>
+                <p>Coding</p>
+            </div>
+            <div>
+                <i class="fas fa-paint-brush"></i>
+                <p>Design</p>
+            </div>
+            <div>
+                <i class="fas fa-project-diagram"></i>
+                <p>Project Management</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="contact section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
 </body>
 </html>
